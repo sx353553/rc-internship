@@ -118,11 +118,12 @@ const ExploreItems = () => {
           ))}
       {visibleCount < items.length && (
         <div className="col-md-12 text-center">
-          <Link
+          <Link 
             to=""
             id="loadmore"
             className="btn-main lead"
             onClick={() => setVisibleCount((prevCount) => prevCount + 4)}
+            data-aos="fade-up"
           >
             Load more
           </Link>
